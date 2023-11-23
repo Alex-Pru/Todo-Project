@@ -1,0 +1,183 @@
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    background: #012E40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#clockContainer{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 7rem;
+    color: #F2E3D5;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'VT323', monospace;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(60, 166, 166, 0.5);
+}
+
+.todo-Container{
+    background-color: #F2E3D5;
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    border: 0.1rem solid rgb(167, 167, 167);
+    box-shadow: 0.1rem 0.2rem 0.3rem rgba(60, 166, 166, 0.5), 
+               0.1rem 0.3rem 0.5rem rgba(60, 166, 166, 0.5), 
+               0.1rem 0.4rem 0.8rem rgba(60, 166, 166, 0.5), 
+               0.1rem 0.8rem 1.6rem rgba(60, 166, 166, 0.5);
+    align-items: center;
+    border-radius: 2rem;
+    gap: 4rem;
+    padding: 1rem 1rem 2rem 1rem;
+    justify-content: center;
+}
+
+.todo-header{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo-header h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    color: #012E40;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(60, 166, 166, 0.5);
+    margin: 0;
+}
+
+.todo-header input{
+    border: 0;
+    transform: skew(5deg);
+    outline: 0;
+    background: rgba(60, 166, 166, 0.5);
+    color: #F2E3D5;
+    width: 70%;
+    font-size: 1.4rem;
+    border: 0.1rem solid #012E40;
+    transition: all .3s;
+}
+
+.todo-header input:hover{
+    color: #012E40;
+    background: #8a7e72;
+}
+
+
+.todo-header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#item::placeholder{
+    color: #012E40;
+    opacity: 0.3;
+}
+
+.todo-header button, .saveBtn, .cancelBtn{
+    border: 0;
+    color: #F2E3D5;
+    background: #012E40;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'VT323', monospace;
+    font-size: 1.6rem;
+    padding: 0.2rem;
+    transform: skew(5deg);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.todo-header button:hover, .saveBtn:hover, .cancelBtn:hover{
+    color: #012E40;
+    background: #8a7e72;
+    transform: skew(-5deg);
+}
+
+.todo-body{
+    width: 100%;
+}
+
+.todo-body-list{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.todo-body-list li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input-controller{
+    width: 80%;
+}
+
+.input-controller textarea{
+    width: 100%;
+    resize: none;
+    color: #012E40;
+    background: #8a7e72;
+    border: 1px solid #2b2a2a;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'VT323', monospace;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+.edit-controller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.edit-controller i{
+    font-size: 3rem;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+}
+
+.update-controller{
+    gap: 0.1rem;
+    flex-direction: column;
+
+}
+
+.saveBtn, .cancelBtn{
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    
+}
+
+@media screen and (max-width: 768px){
+
+    #clockContainer{
+        top: 2rem;
+        right: 2rem;
+
+    }
+
+    .todo-Container{
+        width: 100%;
+    }
+
+}

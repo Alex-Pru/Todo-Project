@@ -1,0 +1,17 @@
+.update-controller{
+    display: none;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+html, body, main{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
