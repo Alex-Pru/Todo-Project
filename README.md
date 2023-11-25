@@ -9,3 +9,4 @@
 <h3>📱 Utilização:</h3>
 
 <p>Se interessou pelo projeto? Saiba que ele é totalmente funcional e guarda as Tasks criadas no armazenamento local do usuário, fique a vontade para usa-lo!🤗</p>
+<p>Link: alex-pru.github.io/Todo-Project/ </p>
